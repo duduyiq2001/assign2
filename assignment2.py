@@ -73,7 +73,6 @@ if isa in (ISA.ARM, ISA.RISCV):
 cache_hierarchy = PrivateL1PrivateL2CacheHierarchy(
     l1d_size="64KiB",
     l1i_size="16KiB",
-    4
     l2_size="256KiB",
 )
 

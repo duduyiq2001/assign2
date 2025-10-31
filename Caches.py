@@ -15,11 +15,11 @@ class MyL1ICache(L1ICache):
         self.mshrs = 4
         self.tgts_per_mshr = 20
 
-class MyL1DCache(L1ICache):
+class MyL1DCache(L1DCache):
     def __init__(self):
         super().__init__(size="64kB")
         self.writeback_clean = False
-class MyL2Cache(L1ICache):
+class MyL2Cache(L2Cache):
     def __init__(self):
         super().__init__(size="256kB")
         self.writeback_clean = False
